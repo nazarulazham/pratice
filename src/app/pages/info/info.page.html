@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="https://openweathermap.org/img/w/{{weather.weather[0].icon}}.png">
+    </ion-avatar>
+    <ion-label text-wrap>
+      <ion-text color="primary">
+        <h3>{{weather.dt}}</h3>
+      </ion-text>
+      <p>{{weather.pressure}}</p>
+      <p>{{weather.humidity}}</p>
+    </ion-label>
+  </ion-item>
+
+
+</ion-content>
